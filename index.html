@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxxor Vacation</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <img src="assets/logo.png" class="logo" alt="Luxxor Vacation">
+    <nav class="nav-links">
+      <a href="#">Villas</a>
+      <a href="#">Servicios</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+  <div class="hero-wrapper" id="heroWrapper" style="height: 80vh;">
+    <div class="cinematic-stage">
+      <video class="hero-video" id="heroVideo" muted playsinline preload="auto">
+        <source src="assets/villa_canvas.mp4" type="video/mp4">
+      </video>
+      <div class="loader" id="loader">
+        <div class="loader-line"></div>
+        <p>LOADING</p>
+      </div>
+      <div class="vignette"></div>
+      <div class="overlay" id="overlay"></div>
+      <div class="hero-title" id="heroTitle">
+        <p class="eyebrow">LUXXOR VACATION</p>
+        <h1>Luxury Villa<br><em>Experience</em></h1>
+        <p class="subtitle">Private pool · Garden · Exclusive stay</p>
+      </div>
+      <div class="pin" id="pin1" style="top:65%; left:12%">
+        <div class="pin-dot"></div>
+        <div class="pin-line pin-line--right"></div>
+        <div class="pin-label">Infinity Pool</div>
+      </div>
+      <div class="pin" id="pin2" style="top:30%; left:44%">
+        <div class="pin-dot"></div>
+        <div class="pin-line pin-line--right"></div>
+        <div class="pin-label">Main Residence</div>
+      </div>
+      <div class="pin" id="pin3" style="top:50%; left:64%">
+        <div class="pin-label">Private Garden</div>
+        <div class="pin-line pin-line--left"></div>
+        <div class="pin-dot"></div>
+      </div>
+      <div class="pin" id="pin4" style="top:42%; left:38%">
+        <div class="pin-dot"></div>
+        <div class="pin-line pin-line--right"></div>
+        <div class="pin-label">Designer Interior</div>
+      </div>
+      <div class="corner corner-tl"></div>
+      <div class="corner corner-tr"></div>
+      <div class="corner corner-bl"></div>
+      <div class="corner corner-br"></div>
+      <div class="arch-text" id="archText">
+        <div class="arch-line">PROJECT / LUXXOR</div>
+        <div class="arch-line">LOCATION / PRIVATE ESTATE</div>
+        <div class="arch-line">AREA / 850 M²</div>
+        <div class="arch-line">POOL / INFINITY · 24M</div>
+      </div>
+      <div class="scroll-indicator" id="scrollInd">
+        <div class="scroll-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </div>
+  </div>
+  <section class="about">
+    <div class="about-content">
+      <span class="tag">EST. 2024 · LUXXOR VACATION</span>
+      <h2>Experiencias de lujo<br>diseñadas para <em>ti</em></h2>
+      <p>Villas exclusivas, experiencias privadas y alojamientos premium seleccionados para clientes que buscan algo más que una estancia ordinaria.</p>
+      <a href="#" class="cta-btn">Explorar Villas</a>
+    </div>
+  </section>
+  <section class="features">
+    <div class="feature-item">
+      <span class="feat-num">01</span>
+      <h3>Privacidad Total</h3>
+      <p>Cada villa garantiza exclusividad absoluta para ti y tus invitados.</p>
+    </div>
+    <div class="feature-item">
+      <span class="feat-num">02</span>
+      <h3>Concierge 24h</h3>
+      <p>Servicio personalizado disponible en todo momento durante tu estancia.</p>
+    </div>
+    <div class="feature-item">
+      <span class="feat-num">03</span>
+      <h3>Experiencias Únicas</h3>
+      <p>Actividades y servicios curados para hacer cada visita memorable.</p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
